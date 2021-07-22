@@ -2,7 +2,6 @@ from django.shortcuts import render, redirect, HttpResponse, HttpResponseRedirec
 from django.template import Context
 import uuid
 from .models import url
-from django.conf import settings
 
 # Create your views here.
 def index(request):
@@ -13,7 +12,8 @@ def index(request):
         data = url(url=link, uuid=uid)
         data.save()
 
-        context = {"urlShort" : f'{settings.ALLOWED_HOSTS[0]}/{uid}'}
+        host = request.build_absolute_uri('')
+        context = {"urlShort" : f'{host}{uid}'}
         return render(request, 'index.html', context)
         
     return render(request, 'index.html')
