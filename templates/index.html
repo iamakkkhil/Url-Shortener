@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://bootswatch.com/darkly/bootstrap.min.css">
     <link rel="stylesheet" href="https://bootswatch.com/darkly/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.2.0/css/mdb.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
@@ -20,10 +22,52 @@
         @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
 
         body {
+            min-height: 100vh;
             background: F44336;
+            display: flex;
+            flex-direction: column;
         }
         * {
             font-family: Raleway;
+        }
+        footer{
+            margin-top: auto;
+            padding-bottom: 20px;
+            font-size: 130%;
+        }
+        .footer-social {
+            margin: 0 auto;
+            text-align:center;
+            color: black;
+            padding: 5px;
+            width: 40%;
+        }
+        .footer-social a {
+            width: 25px;
+            height: 25px;
+            margin: 0 6px;
+            text-align: center;
+            display: inline-block;
+            color: #111;
+            border-radius: 50%;
+            transform: rotate(45deg);
+            line-height: 25px;
+
+            transition: all 500ms ease;
+        }
+        .footer-social a i {
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+        /* hover */
+        .footer-social a:hover{
+            color: #fff;
+        }
+        .footer-social a:hover{
+            background: #111;
         }
     </style>
     <title>URL Shortner</title>
@@ -33,12 +77,12 @@
     <nav class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Url Shortener Service</a>
+                <a class="navbar-brand" href="/"><strong>Url Shortener Service</strong></a>
             </div>
         </div>
     </nav>
 
-    <p class="text-center">Enter any long URL Lets shorten it!</p>
+    <p class="text-center">Enter any long URL <strong>Lets shorten it!</strong></p>
 
     <form class="form-group" method="post" style="
                                 width: 50%;
@@ -54,4 +98,15 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
+
+        
+    <footer class="text-center">
+        <p class="text-center"><a href="https://iamakkkhil.github.io/" target="_blank"><strong>Akhil Bhalerao</strong></a></p>
+        <div class="footer-social">
+            <a href="https://twitter.com/BhaleraoAkhil" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/akhilbhalerao/" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/iamakkkhil" title="Github" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://www.instagram.com/iamakkkhil/" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+    </footer>
 </html>
