@@ -24,4 +24,4 @@ def go(request, uid):
     if link:
         return HttpResponseRedirect(link.url)
     else:
-        return HttpResponse("<h3>Invalid URL</h3>")
+        return render(request, 'invalid.html')
