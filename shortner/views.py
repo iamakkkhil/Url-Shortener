@@ -25,3 +25,12 @@ def go(request, uid):
         return HttpResponseRedirect(link.url)
     else:
         return render(request, 'invalid.html')
+
+
+def not_found(request, exceptions):
+    return render(request, 'notFound.html')
+
+
+def not_found500(request,*args, **argv):
+    print("500")
+    return render(request, 'notFound.html')

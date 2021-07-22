@@ -16,7 +16,20 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('shortner.urls')),
 ]
+
+# Page not found
+handler404 = 'shortner.views.not_found'
+
+# Internal server error
+handler500 = 'shortner.views.not_found500'
+
+# Forbideen no permission
+handler403 = 'shortner.views.not_found'
+
+# Client sad bad request
+handler400 = 'shortner.views.not_found'
