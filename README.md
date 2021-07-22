@@ -9,7 +9,9 @@ This a URL Shortener Django project, which converts a entered url to a short ver
 
 For a complete walkthrough of this project, you can have a look at this video:
 
-<!-- https://user-images.githubusercontent.com/55273506/125203605-b4218700-e296-11eb-994a-875e98e1bbad.mp4 -->
+
+
+https://user-images.githubusercontent.com/55273506/126631878-f256c0f0-7726-4cfa-b534-8bc9af9a0c7c.mp4
 
 
 
