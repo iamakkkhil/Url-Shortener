@@ -1,5 +1,4 @@
 from django.db import models
-from django.conf import settings
 
 # Create your models here.
 class url(models.Model):
@@ -7,4 +6,4 @@ class url(models.Model):
     uuid = models.CharField(max_length=10, unique=True, blank=True, null=True)
 
     def __str__(self) -> str:
-        return f'{settings.ALLOWED_HOSTS[0]}/{self.uuid}' 
+        return f'URL : /{self.uuid}' 
